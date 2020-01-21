@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Flask App</title>
+      <link type= "text/css" rel="stylesheet" href="{{url_for('static',filename='i54.css')}}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="https://www.instagram.com/aroramalhaar/"><img src="{{url_for('static',filename='original3.jpg')}}"></a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+    </div>
+    <script type="text/javascript">
+
+
+        var me = document.createElement("div");
+        me.className += " myimg";
+        document.body.appendChild(me);
+
+        var onClickMe = function() {
+            var bruhSound = document.createElement("audio");
+            bruhSound.src = "{{url_for('static',filename='bruh.mp3')}}";
+            bruhSound.autoplay = "true";
+            document.body.appendChild(bruhSound);
+            console.log(bruhSound);
+        };
+        me.addEventListener('click', onClickMe);
+
+        var onHoverMe = function() {
+            me.style.cursor = "pointer";
+        };
+        me.addEventListener("mousemove", onHoverMe);
+
+
+    </script>
+  </body>
+</html>

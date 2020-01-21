@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background: url(new.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+ * Formatting the header area
+ */
+
+ .container{
+  margin-right: 20px;
+ }
+
+header {
+  background-color: #000000;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+header h1.container {
+  margin: 0;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  float: left;
+  font-family: "Times New Roman";
+}
+
+header h1.container:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.myimg {
+  height: 50%;
+  width: 15%;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+/*
+ * Center the body content
+ */
+
+
+div.home {
+  padding: 10px 0 30px 0;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.sub1 {
+  background-color: none;
+  font-family: "Courier New", "Times New Roman";
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 5px groove #FFFF00;
+ }
+
+.sub2 {
+  background-color: none;
+  font-family: "Courier New", "Times New Roman";
+  height: 250px;
+  width: 1000px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .04em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+div.about {
+  background: url(starry);
+  padding: 10px 0 30px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ /* -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;*/
+}
+
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li + li {
+  margin-left: 35px;
+}
+
+.menu li a {
+  color: #ffffff;
+  font-family: "Times New Roman";
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #FC0E07;
+  
+}
